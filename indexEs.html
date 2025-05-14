@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cristina Vlassov</title>
+    <meta name="description" content="Lorem ipsum" />
+
+    <meta property="og:title" content="Mi Sitio Web" />
+    <meta
+      property="og:description"
+      content="Esta es la descripción de mi sitio web, que aparece cuando se comparte en redes sociales."
+    />
+    <meta
+      property="og:image"
+      content="https://tusitio.com/imagen-destacada.jpg"
+    />
+    <meta property="og:url" content="https://tusitio.com" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <script src="./scripts/script.js"></script>
+  </head>
+
+  <body>
+    <div class="change-lang">
+      <a href="./index.html" class="button-contact-me">See in English</a>
+    </div>
+
+    <header class="navbar light-pink-background">
+      <div class="boxed-row desktop">
+        <h3>Cristina Vlassov</h3>
+        <nav>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li>
+              <a
+                href="mailto:cristinavlassovdev@gmail.com"
+                rel="noopener noreferer"
+                target="_blank"
+                >Contactame</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="boxed-row mobile">
+        <h3>Cristina Vlassov</h3>
+        <button id="menu-button" onclick="handleClickMenu()">
+          <i class="menu-icon closed"></i>
+        </button>
+      </div>
+      <div class="mobile-menu-box">
+        <div class="boxed-row mobile-side-menu">
+          <nav>
+            <ul>
+              <li onclick="closeNav()"><a href="#home">Inicio</a></li>
+              <li onclick="closeNav()"><a href="#skills">Habilidades</a></li>
+              <li onclick="closeNav()">
+                <a href="#experience">Experiencia</a>
+              </li>
+              <li onclick="closeNav()"><a href="#projects">Proyectos</a></li>
+              <li onclick="closeNav()">
+                <a
+                  href="mailto:cristinavlassovdev@gmail.com"
+                  rel="noopener noreferer"
+                  target="_blank"
+                  >Contactame</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="boxed-row">
+          <img
+            src="./assets/portfolioPhoto.png"
+            alt="Foto de mujer rubia"
+            title="Foto de mujer rubia"
+          />
+          <section>
+            <h1>Soy Cristina Vlassov</h1>
+            <p>
+              Tengo 22 años y soy de Buenos Aires, Argentina. Tengo más de dos
+              años de experiencia trabajando como Desarrolladora Web junto con
+              tecnologías como HTML, CSS, JavaScript, PHP y SQL, así como con
+              Sistemas de Manejo de Contenido como WordPress y Shopify.
+            </p>
+            <address>
+              <ul>
+                <li>
+                  <a href="mailto:cristinavlassov@gmail.com">
+                    <i class="mail-icon"></i>
+                    <span>cristinavlassovdev@gmail.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/cristina-vlassov">
+                    <i class="linkedin-icon"></i>
+                    <span>Cristina Vlassov</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/crisvlasova">
+                    <i class="github-icon"></i>
+                    <span>crisvlasova</span>
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <a
+              href=".\assets\CV Cristina Vlassov ES.pdf"
+              target="_blank"
+              rel="noopener noreferer"
+              class="button-see-cv"
+              >Ver Curriculum</a
+            >
+          </section>
+        </div>
+        <img
+          class="background-flowers"
+          src="./assets/backgroundFlowers.png"
+          alt="Flores color rosa dibujadas a mano"
+          title="Flores color rosa dibujadas a mano"
+        />
+      </section>
+
+      <section id="about-me" class="light-pink-background">
+        <div class="boxed-row">
+          <h2>Sobre Mi</h2>
+          <p>
+            Soy estudiante de Análisis de Sistemas en la Escuela de Arte
+            Multimedial DaVinci, donde profundizo mis conocimientos en
+            tecnología y diseño. A la vez me encuentro trabajando como
+            Desarrolladora WordPress y Shopify, donde aplico mis conocimientos
+            como estudiante de Análisis de Sistemas y conocimientos de
+            desarrollo web creando sitios con un enfoque al cliente,
+            entiendiendo sus necesidades y dando soluciones optimas, funcionales
+            y creativas.
+            <br />
+            <br />
+            Soy una persona apasionada por el aprendizaje y la puesta en escena
+            de todo lo aprendido. Además, me encanta explorar los temas que lo
+            rodean para aprenderlo en mayor profundidad, entendiendo su
+            funcionamiento completo y pudiendo sacar su mayor provecho de su
+            potencial.
+            <br />
+            <br />
+            Mi objetivo es crecer de forma personal y profesional en el rubro
+            tecnológico, ofreciendo soluciones enfocadas en el usuario,
+            resolviendo problemas de manera eficaz, creativa e innovadora.
+          </p>
+          <div class="button-container">
+            <a
+              href="mailto:cristinavlassovdev@gmail.com"
+              rel="noopener noreferer"
+              target="_blank"
+              class="button-contact-me"
+              >Contactame</a
+            >
+            <a
+              href=".\assets\CV Cristina Vlassov ES.pdf"
+              target="_blank"
+              rel="noopener noreferer"
+              class="button-see-cv"
+              >Ver Curriculum</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="boxed-row">
+          <h2>Mis Habilidades</h2>
+          <p>
+            Mi trayectoria incluye distintas herramientas, pero estas son las
+            tecnologías que manejo con mayor profundidad y eficacia:
+          </p>
+          <section class="skills-general-container">
+            <div id="carousel-track">
+              <figure class="slide">
+                <img
+                  src="./assets/htmlIcon.png"
+                  alt="Orange HTML5 icon"
+                  title="Orange HTML5 icon"
+                />
+                <figcaption>HTML</figcaption>
+                <span>2,5 años de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/cssIcon.png"
+                  alt="Blue CSS3 icon"
+                  title="Blue CSS3 icon"
+                />
+                <figcaption>CSS</figcaption>
+                <span>2,5 años de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/jsIcon.png"
+                  alt="Yellow JavaScript Icon"
+                  title="Yellow JavaScript Icon"
+                />
+                <figcaption>JavaScript</figcaption>
+                <span>2,5 años de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/phpIcon.png"
+                  alt="Purple and black PHP icon"
+                  title="Purple and black PHP icon"
+                />
+                <figcaption>PHP</figcaption>
+                <span>2 años de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/javaIcon.png"
+                  alt="Java icon"
+                  title="Java icon"
+                />
+                <figcaption>Java</figcaption>
+                <span>6 meses de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/sqlIcon.png"
+                  alt="Purple SQL icon"
+                  title="Purple SQL icon"
+                />
+                <figcaption>SQL</figcaption>
+                <span>2 años de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/wpIcon.png"
+                  alt="WordPress Icon"
+                  title="WordPress Icon"
+                />
+                <figcaption>WordPress</figcaption>
+                <span>2 años de experiencia</span>
+              </figure>
+              <figure class="slide">
+                <img
+                  src="./assets/shopifyIcon.png"
+                  alt="Green Shopify icon"
+                  title="Green Shopify icon"
+                />
+                <figcaption>Shopify</figcaption>
+                <span>1 año de experiencia</span>
+              </figure>
+            </div>
+          </section>
+          <div class="button-container">
+            <a
+              href="mailto:cristinavlassovdev@gmail.com"
+              rel="noopener noreferer"
+              target="_blank"
+              class="button-contact-me"
+              >Contactame</a
+            >
+            <a
+              href=".\assets\CV Cristina Vlassov ES.pdf"
+              target="_blank"
+              rel="noopener noreferer"
+              class="button-see-cv"
+              >Ver Curriculum</a
+            >
+          </div>
+        </div>
+        <img
+          class="background-flowers"
+          src="./assets/backgroundFlowers.png"
+          alt="Flores color rosa dibujadas a mano"
+          title="Flores color rosa dibujadas a mano"
+        />
+      </section>
+
+      <section id="experience" class="light-pink-background">
+        <div class="boxed-row">
+          <h2>Experiencias Profesionales</h2>
+          <!-- <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+            quaerat ullam tempora alias inventore repellendus iste excepturi
+            sequi delectus ratione nostrum architecto, dolorem voluptatem a odit
+            laboriosam ipsum rem quibusdam.
+          </p> -->
+          <article class="experience-article">
+            <header>
+              <h5>Desarrolladora Web WordPress y Shopify</h5>
+              <span>Pink Shark Marketing,<br> Mar 2024 - Actualidad</span>
+            </header>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>PHP</li>
+              <li>WordPress</li>
+              <li>Shopify</li>
+              <li>Figma</li>
+            </ul>
+            <p>
+              En mi actual posición en Pink Shark, una empresa de marketing
+              estadounidense, me dedico a desarrollar y mantener sitios web
+              personalizados utilizando CMS como Shopify y WordPress. Mi trabajo
+              implica la personalización de estos sitios para que se alineen con
+              los diseños gráficos y cumplan con los requisitos específicos de
+              cada cliente. Utilizo tecnologías web como HTML, CSS, JavaScript y
+              PHP para asegurar que las páginas no solo sean funcionales, sino
+              también visualmente atractivas. Gracias a mi experiencia en diseño
+              gráfico y mi formación en una universidad con enfoque en arte
+              multimedia, puedo ofrecer soluciones orientadas al cliente que son
+              realistas y que cumplen con sus requerimientos. Durante esta
+              experiencia, he aprendido a utilizar Shopify de manera efectiva y
+              a dominar el código personalizado necesario para optimizar estas
+              plataformas.
+            </p>
+            <!-- <button>Leer Mas<i class="toggle-arrow"></i></button> -->
+          </article>
+          <article class="experience-article">
+            <header>
+              <h5>Desarrolladora Web y Diseñadora</h5>
+              <span>WebLine Service,<br> Sep 2023 - Jun 2024</span>
+            </header>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP (Patron MVC)</li>
+              <li>WordPress</li>
+              <li>Figma</li>
+            </ul>
+            <p>
+              Trabajé como desarrolladora full stack y diseñadora de contenido
+              multimedia, donde tuve la oportunidad de contribuir al desarrollo
+              y mantenimiento de sitios web para importantes marcas, como
+              Cerraduras Prive, una de las principales marcas de cerraduras en
+              Argentina, así como para ABA y ABAPPRA (asociaciones bancarias
+              argentinas) y mayoristas de autopartes como Districesar y
+              Distrimap. En esta experiencia, utilicé tecnologías web como HTML,
+              CSS, JavaScript, PHP, PHPMyAdmin y SQL para el desarrollo de las
+              páginas. Para el diseño gráfico, empleé Figma, lo que me permitió
+              crear interfaces atractivas y funcionales
+            </p>
+            <!-- <button>Leer Mas<i class="toggle-arrow"></i></button> -->
+          </article>
+          <article class="experience-article">
+            <header>
+              <h5>Desarrolladora Web e Interactividad</h5>
+              <span>Skill-on,<br> Sep 2022 - Sep 2023</span>
+            </header>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>WordPress</li>
+              <li>Figma</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Animation</li>
+              <li>Adobe XD</li>
+            </ul>
+            <p>
+              Desarrollé cursos de capacitación para diversas empresas,
+              incluyendo Banco Pichincha, uno de los principales bancos de
+              Ecuador, y Grupo Consenso, una de las empresas más grandes del
+              país, junto con sus subsidiarias como Indurama y Marcimex. También
+              trabajé con Claro, una reconocida compañía telefónica en América
+              Latina. Mi labor incluyó el desarrollo integral de cursos de
+              onboarding, abarcando desde la creación de gráficos hasta el
+              diseño de la interfaz. Utilicé metodologías ágiles como Scrum y
+              herramientas de gestión de tareas como Trello y ClickUp para
+              asegurar la eficiencia en el proceso. Además, trabajé con
+              tecnologías web como HTML, CSS y JavaScript, así como con Adobe
+              Animation, Action Script 3.0 y WordPress para la creación de estos
+              cursos. Esta experiencia me permitió fortalecer mis habilidades
+              técnicas y mi capacidad para trabajar en equipo en un entorno
+              dinámico.
+            </p>
+            <!-- <button>Leer Mas<i class="toggle-arrow"></i></button> -->
+          </article>
+          <div class="button-container">
+            <a
+              href="mailto:cristinavlassovdev@gmail.com"
+              rel="noopener noreferer"
+              target="_blank"
+              class="button-contact-me"
+              >Contactame</a
+            >
+            <a
+              href=".\assets\CV Cristina Vlassov ES.pdf"
+              target="_blank"
+              rel="noopener noreferer"
+              class="button-see-cv"
+              >Ver Curriculum</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="boxed-row">
+          <h2>Mis Proyectos</h2>
+          <p>
+            A lo largo de mi experiencia trabajando como Desarrolladora Web, he
+            trabajando en distintos proyectos. Aquí se encuentran los sitios que
+            considero más destacados y que han representado un desafío a la hora
+            de trabajar en ellos.
+            <br />
+            Haz click en la ventana del sitio para visitarlo:
+          </p>
+          <section>
+            <a
+              href="https://herpessolution.com/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card hs">
+                <header>
+                  <img
+                    src="./assets/miniLogo/hsMiniLogo.png"
+                    alt="Blue heart with a transparent cross in the middle"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img src="./assets/pageLogo/hsLogo.png" alt="HS logo" />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://sofetch.ca/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card sofetch">
+                <header>
+                  <img
+                    src="./assets/miniLogo/sofetchMiniLogo.png"
+                    alt="Letter O with a moving tail"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img
+                    src="./assets/pageLogo/sofetchLogo.png"
+                    alt="So Fetch logo"
+                  />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://dynamicpurchasing.net/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card dynamic">
+                <header>
+                  <img
+                    src="./assets/miniLogo/dynamicMiniLogo.png"
+                    alt="Dotted logo"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img
+                    src="./assets/pageLogo/dynamicLogo.png"
+                    alt="Dynamic Purchasing log"
+                  />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://flourishbyaa.com/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card flourish-dual">
+                <header>
+                  <img
+                    src="./assets/miniLogo/flourishMiniLogo.png"
+                    alt="Blue heart with a transparent cross in the middle"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img src="./assets/pageLogo/flourishLogo.png" alt="HS logo" />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://thedelishworld.com/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card delish">
+                <header>
+                  <img
+                    src="./assets/miniLogo/delishMiniLogo.png"
+                    alt="Letter O with a moving tail"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img
+                    src="./assets/pageLogo/delishLogo.png"
+                    alt="So Fetch logo"
+                  />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://dual-shave.com/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card flourish-dual">
+                <header>
+                  <img
+                    src="./assets/miniLogo/dualMiniLogo.png"
+                    alt="Dotted logo"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img
+                    src="./assets/pageLogo/dualLogo.png"
+                    alt="Dynamic Purchasing log"
+                  />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://madem.com.ar/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card flourish-dual">
+                <header>
+                  <img
+                    src="./assets/miniLogo/mademMiniLogo.png"
+                    alt="Dotted logo"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img
+                    src="./assets/pageLogo/mademLogo.png"
+                    alt="Dynamic Purchasing log"
+                  />
+                </div>
+              </figure>
+            </a>
+
+            <a
+              href="https://assisi.com.ar/"
+              rel="noopener noreferer"
+              target="_blank"
+              class="anchor-project-card"
+            >
+              <figure class="project-card assisi">
+                <header>
+                  <img
+                    src="./assets/miniLogo/assisiMiniLogo.png"
+                    alt="Dotted logo"
+                  />
+                  <div>
+                    <i>●</i>
+                    <i>●</i>
+                    <i>●</i>
+                  </div>
+                </header>
+                <div>
+                  <img
+                    src="./assets/pageLogo/assisiLogo.png"
+                    alt="Dynamic Purchasing log"
+                  />
+                </div>
+              </figure>
+            </a>
+
+            <!-- <a href="#" rel="noopener noreferer" target="_blank" class="anchor-project-card">
+            <figure class="project-card aaii">
+              <header>
+                <img src="./assets/miniLogo/aaiiMiniLogo.png" alt="Dotted logo" />
+                <div>
+                  <i>●</i>
+                  <i>●</i>
+                  <i>●</i>
+                </div>
+              </header>
+              <div>
+                <img src="./assets/pageLogo/aaiiLogo.png" alt="Dynamic Purchasing log" />
+              </div>
+            </figure>
+          </a> -->
+          </section>
+          <div class="button-container">
+            <a
+              href="mailto:cristinavlassovdev@gmail.com"
+              rel="noopener noreferer"
+              target="_blank"
+              class="button-contact-me"
+              >Contactame</a
+            >
+            <a
+              href=".\assets\CV Cristina Vlassov ES.pdf"
+              target="_blank"
+              rel="noopener noreferer"
+              class="button-see-cv"
+              >Ver Curriculum</a
+            >
+          </div>
+        </div>
+        <img
+          class="background-flowers"
+          src="./assets/backgroundFlowers.png"
+          alt="Flores color rosa dibujadas a mano"
+          title="Flores color rosa dibujadas a mano"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <section></section>
+      <section class="light-pink-background">
+        <div class="boxed-row">
+          <div class="description-row">
+            <p>
+              Te ha quedado alguna duda o quieres contactarme? Escribeme al mail
+              haciendo click
+              <a href="mailto:cristinavlassovdev@gmail.com">aquí</a>.
+            </p>
+            <img src="./assets/favicon.png" alt="Favicon" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about-me">Sobre Mi</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul>
+              <li>
+                <a href="mailto:cristinavlassov@gmail.com">
+                  <i class="mail-icon"></i>
+                  <span>cristinavlassovdev@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/cristina-vlassov">
+                  <i class="linkedin-icon"></i>
+                  <span>Cristina Vlassov</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/crisvlasova">
+                  <i class="github-icon"></i>
+                  <span>crisvlasova</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+      <div class="copyright-container light-pink-background">
+        <small>Copyright 2025 &copy; | Cristina Vlassov</small>
+      </div>
+      <!-- </div> -->
+    </footer>
+  </body>
+</html>
