@@ -776,6 +776,14 @@ footer .copyright-container small {
     max-width: 400px;
   }
 
+  #about-me .boxed-row h2 {
+    text-align: center
+  } 
+  
+  #about-me .boxed-row .button-container {
+    align-self: center;
+  }
+
   #skills .skills-general-container {
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
